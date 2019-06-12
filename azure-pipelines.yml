@@ -27,5 +27,9 @@ steps:
   displayName: 'run tests'
 
 - script: |
+    sudo apt install lcov
+  displayName: 'install lcov'
+
+- script: |
     make -C bld coverage
   displayName: 'coverage'
